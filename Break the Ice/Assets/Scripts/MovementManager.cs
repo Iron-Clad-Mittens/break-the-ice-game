@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class MovementManager : MonoBehaviour
@@ -18,13 +19,22 @@ public class MovementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+		// Use this to figure out which keys for controller support.
+		/*foreach(KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
+		{
+			if (Input.GetKeyDown(kcode))
+				Debug.Log("KeyCode down: " + kcode);
+		}*/
 
 		if (Input.GetKeyDown(KeyCode.Space) && Player.GetComponent<PlayerScript>().canJump )
         {
             Player.GetComponent<Rigidbody2D>().AddForce(transform.up * Speed, ForceMode2D.Impulse);
 			Player.GetComponent<PlayerScript>().canJump = false;
         }
+
+		if (Input.GetKeyDown (KeyCode.LeftShift)) {
+			Debug.Log ("Punch");
+		}
 
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
         Player.transform.position += movement / 10;

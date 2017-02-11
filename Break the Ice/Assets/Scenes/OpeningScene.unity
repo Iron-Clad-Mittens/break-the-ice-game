@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 576520346}
   - component: {fileID: 576520345}
   - component: {fileID: 576520350}
+  - component: {fileID: 576520351}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -285,6 +286,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextScene: MainScene
   WaitSeconds: 2
+  triggerOnCollision: 1
+--- !u!114 &576520351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576520344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45568c7e304354011b49fd4814b627c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1128037899}
+  message: Spicy jalapeno bacon ipsum dolor amet sirloin salami venison tri-tip bacon
+    short ribs. Meatloaf pancetta bacon, jerky frankfurter ham swine beef ribs cow.
+    Picanha ham hock cow chicken, andouille filet mignon beef ribs strip steak pork
+    loin turkey ball tip shankle. Pig porchetta turkey doner ribeye drumstick pastrami
+    strip steak frankfurter short ribs meatloaf. Shank cow rump short ribs venison
+    biltong, tail burgdoggen salami bacon pork chop ground round. Beef beef ribs landjaeger
+    salami bacon shankle tenderloin sirloin pig leberkas pork short loin. Pork rump
+    pig bacon.  Jowl short loin beef tenderloin salami. Flank sausage cupim, bacon
+    turkey tongue strip steak turducken rump capicola t-bone bresaola. Chicken ribeye
+    filet mignon strip steak capicola kielbasa. Meatloaf biltong jowl filet mignon
+    landjaeger pig short loin swine drumstick pork loin. T-bone cow flank pork kielbasa
+    drumstick pancetta spare ribs chuck alcatra shoulder.  Turkey shank pork belly
+    short ribs, meatball rump turducken biltong tail cow leberkas salami chuck tongue.
+    Biltong spare ribs pastrami cupim andouille beef swine. Sirloin jowl bresaola
+    burgdoggen flank drumstick pig ground round pancetta beef ribs shankle. Landjaeger
+    ground round tongue picanha spare ribs porchetta.  Short ribs alcatra ball tip
+    boudin pig kevin tenderloin, ham hock bresaola pancetta. Pig sausage short ribs,
+    ham hock jowl salami brisket tongue beef. Tongue ham hock short loin, shank strip
+    steak swine ball tip leberkas beef ribs. Meatloaf t-bone brisket cow pig prosciutto,
+    tri-tip alcatra ball tip. Sirloin chicken frankfurter, bacon picanha turducken
+    t-bone cupim tongue fatback. Leberkas landjaeger frankfurter shank bacon strip
+    steak chuck salami drumstick capicola kielbasa.
+  delayBetweenChar: 0.1
 --- !u!1 &876441596
 GameObject:
   m_ObjectHideFlags: 0
@@ -379,8 +416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 36, y: -12}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 3, y: -149}
+  m_SizeDelta: {x: 550, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1128037899
 MonoBehaviour:
