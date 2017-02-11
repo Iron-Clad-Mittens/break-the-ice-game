@@ -55,8 +55,9 @@ public class PlayerScript : MonoBehaviour
             setJumpingAnimation(movement);
         }
 
-        if (Input.GetButton("Punch") && canPunch)
-            Debug.Log("Punch");
+		if (Input.GetButton ("Punch") && canPunch) {
+			this.GetComponentInChildren<Animator> ().SetTrigger ("doPunch");
+		}
         //canPunch = false;
     }
 

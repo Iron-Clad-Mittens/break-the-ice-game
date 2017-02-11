@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: cba31a4cfb34d4a8789e9bc5de54f526
-timeCreated: 1486823491
+timeCreated: 1486834405
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -89,12 +89,12 @@ TextureImporter:
       name: tim_animations_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12
         y: 384
-        width: 64
+        width: 40
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -102,12 +102,12 @@ TextureImporter:
       name: tim_animations_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 77
         y: 384
-        width: 64
+        width: 40
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -115,12 +115,12 @@ TextureImporter:
       name: tim_animations_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 141
         y: 384
-        width: 64
+        width: 40
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -128,12 +128,12 @@ TextureImporter:
       name: tim_animations_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 205
         y: 384
-        width: 64
+        width: 40
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -141,12 +141,12 @@ TextureImporter:
       name: tim_animations_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 20
         y: 256
-        width: 64
+        width: 30
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -154,12 +154,12 @@ TextureImporter:
       name: tim_animations_5
       rect:
         serializedVersion: 2
-        x: 64
+        x: 76
         y: 256
-        width: 64
+        width: 43
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -167,12 +167,12 @@ TextureImporter:
       name: tim_animations_6
       rect:
         serializedVersion: 2
-        x: 128
+        x: 148
         y: 256
-        width: 64
+        width: 30
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -180,12 +180,12 @@ TextureImporter:
       name: tim_animations_7
       rect:
         serializedVersion: 2
-        x: 192
-        y: 256
-        width: 64
+        x: 205
+        y: 255
+        width: 42
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -193,12 +193,12 @@ TextureImporter:
       name: tim_animations_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 13
         y: 128
-        width: 64
+        width: 39
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -206,12 +206,12 @@ TextureImporter:
       name: tim_animations_9
       rect:
         serializedVersion: 2
-        x: 64
+        x: 84
         y: 128
-        width: 64
-        height: 64
+        width: 56
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -224,7 +224,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -232,12 +232,12 @@ TextureImporter:
       name: tim_animations_11
       rect:
         serializedVersion: 2
-        x: 192
+        x: 211
         y: 128
-        width: 64
+        width: 41
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -245,12 +245,12 @@ TextureImporter:
       name: tim_animations_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 64
+        x: 8
+        y: 2
+        width: 44
+        height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -258,12 +258,12 @@ TextureImporter:
       name: tim_animations_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 71
+        y: 2
+        width: 68
+        height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -276,7 +276,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -284,13 +284,13 @@ TextureImporter:
       name: tim_animations_15
       rect:
         serializedVersion: 2
-        x: 192
+        x: 199
         y: 0
-        width: 64
+        width: 52
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 2, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     outline: []
