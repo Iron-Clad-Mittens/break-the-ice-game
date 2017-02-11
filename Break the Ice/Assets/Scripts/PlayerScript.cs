@@ -10,6 +10,9 @@ public class PlayerScript : MonoBehaviour
 
     private bool canJump = true;
     private bool canPunch = true;
+
+    private float punchTimer = 0.8f;
+
     // Use this for initialization
     void Start()
     {
@@ -21,6 +24,9 @@ public class PlayerScript : MonoBehaviour
     {
         movement();
         //reset punch
+        punchTimer -= Time.deltaTime;
+        if (punchTimer <= 0)
+            canPunch = true;
     }
 
     void OnCollisionEnter2D(Collision2D colli)
@@ -55,10 +61,12 @@ public class PlayerScript : MonoBehaviour
             setJumpingAnimation(movement);
         }
 
-		if (Input.GetButton ("Punch") && canPunch) {
-			this.GetComponentInChildren<Animator> ().SetTrigger ("doPunch");
-		}
-        //canPunch = false;
+        if (Input.GetButton("Punch") && canPunch)
+        {
+            this.GetComponentInChildren<Animator>().SetTrigger("doPunch");
+            canPunch = false;
+            punchTimer = 0.8f;
+        }
     }
 
     private void setLandedAnimation()
