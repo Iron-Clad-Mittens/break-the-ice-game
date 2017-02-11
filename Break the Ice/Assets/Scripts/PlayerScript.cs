@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public float Speed;
 
     private bool canJump = true;
+    private bool canPunch = true;
     // Use this for initialization
     void Start()
     {
@@ -19,6 +20,7 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         movement();
+        //reset punch
     }
 
     void OnCollisionEnter2D(Collision2D colli)
@@ -46,16 +48,17 @@ public class PlayerScript : MonoBehaviour
         setRunningAnimation(movement);
 
 
-        if (Input.GetKeyDown(KeyCode.Space) && canJump)
+        if (Input.GetButton("Jump") && canJump)
         {
             this.GetComponent<Rigidbody2D>().AddForce(transform.up * Speed, ForceMode2D.Impulse);
             canJump = false;
             setJumpingAnimation(movement);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetButton("Punch") && canPunch)
         {
             Debug.Log("Punch");
+            //canPunch = false;
         }
 
 
