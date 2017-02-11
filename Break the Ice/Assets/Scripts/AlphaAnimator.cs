@@ -21,7 +21,7 @@ public class AlphaAnimator : MonoBehaviour {
 		if (isComplete) {
 			time += Time.deltaTime;
 			if (time > 2) {
-				Application.LoadLevel ("MainScene");
+				Application.LoadLevel ("OpeningScene");
 			}
 			return;
 		}
