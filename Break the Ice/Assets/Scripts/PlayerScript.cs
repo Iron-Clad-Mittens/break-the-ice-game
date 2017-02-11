@@ -21,6 +21,7 @@ public class PlayerScript : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D colli){
 		if (colli.gameObject.tag == "Platform") {
 			canJump = true;
+			setLandedAnimation (new Vector3 (Input.GetAxis ("Horizontal"), 0, 0));
 		}
 	}
 
@@ -32,29 +33,43 @@ public class PlayerScript : MonoBehaviour {
 				Debug.Log("KeyCode down: " + kcode);
 		}*/
 
+		Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+		this.transform.position += movement / 10;
+		Camera.transform.position = new Vector3 (this.transform.position.x, Camera.transform.position.y, Camera.transform.position.z);
+
+		setRunningAnimation (movement);
+
+
 		if (Input.GetKeyDown(KeyCode.Space) && canJump )
 		{
 			this.GetComponent<Rigidbody2D>().AddForce(transform.up * Speed, ForceMode2D.Impulse);
 			canJump = false;
+			setJumpingAnimation (movement);
 		}
 
 		if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			Debug.Log ("Punch");
 		}
 
-		Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
-		this.transform.position += movement / 10;
-		Camera.transform.position = new Vector3 (this.transform.position.x, Camera.transform.position.y, Camera.transform.position.z);
-		setRunningAnimation (movement);
+
+
 	}
 
-	private void setJumpingAnimation(){
+	private void setLandedAnimation(Vector3 movement){
+		this.GetComponentInChildren<Animator> ().SetTrigger ("toIdle");
+	}
+
+	private void setJumpingAnimation(Vector3 movement){
+		if (movement.x == 0) {
+			this.GetComponentInChildren<Animator> ().SetTrigger ("toIdleJump");
+		}
+		
 	}
 	private void setRunningAnimation(Vector3 movement){
 		if (movement.x != 0) {
 			this.GetComponentInChildren<Animator> ().SetTrigger ("toWalking");
 		} else {
-			this.GetComponentInChildren<Animator> ().SetTrigger ("toIdle");
+			//this.GetComponentInChildren<Animator> ().SetTrigger ("toIdle");
 		}
 
 		this.GetComponentInChildren<SpriteRenderer> ().flipX = (movement.x < 0);
