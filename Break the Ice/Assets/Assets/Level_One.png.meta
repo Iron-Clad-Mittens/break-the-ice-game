@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8a191e239d27c3546acd352d7ca8fec3
-timeCreated: 1486834864
+timeCreated: 1486843160
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -13,9 +13,9 @@ TextureImporter:
     21300012: Level_One_6
     21300014: Level_One_7
     21300016: Level_One_8
-    21300018: Level_One_9
+    21300018: GrassPlatform
     21300020: Level_One_10
-    21300022: Level_One_11
+    21300022: GrassBottom
     21300024: Level_One_12
   serializedVersion: 4
   mipmaps:
@@ -104,7 +104,7 @@ TextureImporter:
         width: 316
         height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -117,7 +117,7 @@ TextureImporter:
         width: 120
         height: 176
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -143,7 +143,7 @@ TextureImporter:
         width: 122
         height: 62
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -156,7 +156,7 @@ TextureImporter:
         width: 48
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -169,7 +169,7 @@ TextureImporter:
         width: 55
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -182,7 +182,7 @@ TextureImporter:
         width: 82
         height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -195,12 +195,12 @@ TextureImporter:
         width: 20
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Level_One_9
+      name: GrassPlatform
       rect:
         serializedVersion: 2
         x: 396
@@ -208,7 +208,7 @@ TextureImporter:
         width: 72
         height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -221,20 +221,20 @@ TextureImporter:
         width: 71
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Level_One_11
+      name: GrassBottom
       rect:
         serializedVersion: 2
         x: 352
-        y: 0
+        y: 1
         width: 192
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -247,7 +247,7 @@ TextureImporter:
         width: 30
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
