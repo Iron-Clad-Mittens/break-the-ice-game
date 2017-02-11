@@ -286,7 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextScene: MainScene
   WaitSeconds: 2
-  triggerOnCollision: 1
+  triggerOnCollision: 0
 --- !u!114 &576520351
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour {
 
-	public bool canJump = true;
+	public GameObject Camera;
+	public float Speed;
 
+	private bool canJump = true;
 	// Use this for initialization
 	void Start () {
 		
@@ -13,7 +15,7 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		movement ();
 	}
 
 	void OnCollisionEnter2D(Collision2D colli){
@@ -21,4 +23,44 @@ public class PlayerScript : MonoBehaviour {
 			canJump = true;
 		}
 	}
+
+	private void movement(){
+		// Use this to figure out which keys for controller support.
+		/*foreach(KeyCode kcode in Enum.GetValues(typeof(KeyCode)))
+		{
+			if (Input.GetKeyDown(kcode))
+				Debug.Log("KeyCode down: " + kcode);
+		}*/
+
+		if (Input.GetKeyDown(KeyCode.Space) && canJump )
+		{
+			this.GetComponent<Rigidbody2D>().AddForce(transform.up * Speed, ForceMode2D.Impulse);
+			canJump = false;
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftShift)) {
+			Debug.Log ("Punch");
+		}
+
+		Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0, 0);
+		this.transform.position += movement / 10;
+		Camera.transform.position = new Vector3 (this.transform.position.x, Camera.transform.position.y, Camera.transform.position.z);
+		setRunningAnimation (movement);
+	}
+
+	private void setJumpingAnimation(){
+	}
+	private void setRunningAnimation(Vector3 movement){
+		if (movement.x != 0) {
+			this.GetComponentInChildren<Animator> ().SetTrigger ("toWalking");
+		} else {
+			this.GetComponentInChildren<Animator> ().SetTrigger ("toIdle");
+		}
+
+		this.GetComponentInChildren<SpriteRenderer> ().flipX = (movement.x < 0);
+
+	}
 }
+
+
+
